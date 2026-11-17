@@ -8,7 +8,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
-  /* Стили повторяют inter-heat.ru/services/podbor-elektrodvigatelya/: Montserrat, текст #555, заголовки #333, акцент #203e90 */
   .ti-page{--blue:#203e90;--blue35:rgba(32,63,146,.35);--text:#555;--head:#333;--muted:#999;--line:#ececec;--soft:#f2f2f2;--soft-line:#dedede;
     font-family:Montserrat,Arial,sans-serif;font-size:15px;line-height:25px;color:var(--text);max-width:1100px;margin:0 auto;padding:40px 16px 60px;box-sizing:border-box}
   .ti-page *,.ti-page *::before,.ti-page *::after{box-sizing:border-box}
@@ -24,7 +23,6 @@
   .ti-section{margin:36px 0 0}
   .ti-check{color:#d0021b;font-weight:600}
 
-  /* вступление */
   .ti-intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:stretch}
   .ti-intro__lead p:first-child{font-size:16px;line-height:27px;color:var(--head)}
   .ti-intro__lead .ti-actions{margin-bottom:0}
@@ -36,7 +34,6 @@
   .ti-facts li:first-child strong{display:inline;margin:0}
   .ti-page .ti-bridge{margin:20px 0 0}
 
-  /* списки */
   .ti-list{margin:0 0 16px;padding:0;list-style:none}
   .ti-list li{position:relative;padding-left:22px;margin:0 0 8px}
   .ti-list li::before{content:"";position:absolute;left:2px;top:10px;width:6px;height:6px;border-radius:50%;background:var(--blue)}
@@ -44,7 +41,6 @@
   .ti-steps li{counter-increment:s;position:relative;padding:12px 16px 12px 58px;border:1px solid var(--line);border-radius:3px;margin:0 0 8px;background:#fff}
   .ti-steps li::before{content:counter(s);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;font-weight:600;font-size:14px;line-height:30px;text-align:center}
 
-  /* кнопки — как .btn-default и .btn-transparent-border-color на сайте */
   .ti-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
   .ti-actions--center{justify-content:center;margin-top:30px}
   .ti-page .ti-btn{display:inline-block;font:500 14px/20px Montserrat,Arial,sans-serif;letter-spacing:.8px;text-transform:uppercase;padding:12px 21px 11px;border-radius:3px;border:1px solid var(--blue);cursor:pointer;text-align:center}
@@ -53,7 +49,6 @@
   .ti-page .ti-btn--outline{background:#fff;color:var(--blue);border-color:var(--blue35)}
   .ti-page .ti-btn--outline:hover{border-color:var(--blue)}
 
-  /* таблицы — синяя шапка, светлые строки */
   .ti-table{overflow-x:auto;margin:6px 0 20px;border:1px solid var(--line);border-radius:3px}
   .ti-table table{width:100%;border-collapse:collapse;font-size:14px;line-height:21px}
   .ti-table th{background:var(--blue);color:#fff;font-weight:600;font-size:13px;text-align:left;padding:14px 16px;vertical-align:bottom}
@@ -61,7 +56,6 @@
   .ti-table tbody tr:nth-child(even) td{background:#fafafa}
   .ti-table td:first-child{color:var(--head);font-weight:500}
 
-  /* заглушки под фото */
   .ti-ph{margin:22px 0 26px}
   .ti-ph__box{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:280px;padding:24px;border:1px dashed #c9cfdc;border-radius:3px;text-align:center;color:#8a93a8;
     background:repeating-linear-gradient(135deg,#f6f7f9 0 14px,#eff1f5 14px 28px)}
@@ -75,7 +69,6 @@
   .ti-intro .ti-ph{margin:0;display:flex}
   .ti-intro .ti-ph__box{flex:1;min-height:300px}
 
-  /* блок помощи и форма — как .calculator-electromotor__help */
   .ti-help{display:flex;gap:22px;background:var(--soft);border:1px solid var(--soft-line);border-radius:3px;padding:26px 24px;margin:20px 0}
   .ti-help__icon svg{width:32px;height:40px}
   .ti-help__main{flex:1;min-width:0}
@@ -89,7 +82,6 @@
   .ti-file input{display:none}
   .ti-form .ti-btn{grid-column:1/-1}
 
-  /* FAQ — ответы всегда открыты */
   .ti-faq__item{border:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.04);margin:0 0 -1px;background:#fff;padding:24px 35px 20px}
   .ti-page .ti-faq__q{margin:0 0 10px;font-size:14px;line-height:19.6px;font-weight:600;text-transform:uppercase;color:var(--head)}
   .ti-faq__body{color:rgba(51,51,51,.75);font-size:14px;line-height:23px}
@@ -107,7 +99,6 @@
     .ti-section{margin-top:30px}
   }
   @media (max-width:560px){.ti-facts ul{grid-template-columns:1fr}}
-  /* таблицы на телефоне — карточками, без горизонтальной прокрутки */
   @media (max-width:600px){
     .ti-table{border:0;overflow:visible}
     .ti-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
@@ -126,7 +117,7 @@
   <div class="ti-crumbs"><a href="https://inter-heat.ru/">Главная</a><span>—</span><a href="https://inter-heat.ru/services/">Услуги</a><span>—</span>Теплоизоляция для теплообменников</div>
   <div class="ti-intro">
     <div class="ti-intro__lead"><p>Теплоизоляция для теплообменников от ИНТЭР — съёмный термочехол, который шьют по модели, числу пластин и фотографиям разборного пластинчатого аппарата. Термочехол снижает теплопотери через плиты, пакет пластин и раму, защищает персонал от ожогов в зоне обслуживания и снимается модулями на время промывки. Для расчёта пришлите модель, число пластин, температуру теплоносителя на входе, место установки и фото аппарата со всех сторон.</p>
-<div class="ti-actions"><a class="ti-btn ti-btn--primary" href="#ti-form">Рассчитать термочехол</a><!-- TODO: ссылка на файл опросного листа --><a class="ti-btn ti-btn--outline" href="#" download>Скачать опросный лист</a></div>
+<div class="ti-actions"><a class="ti-btn ti-btn--primary" href="#ti-form">Рассчитать термочехол</a><a class="ti-btn ti-btn--outline" href="#" download>Скачать опросный лист</a></div>
 </div>
     <figure class="ti-ph"><div class="ti-ph__box"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="9" width="40" height="30" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="20" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 36l12-11 9 8 6-5 9 8" fill="none" stroke="currentColor" stroke-width="2"/></svg><span class="ti-ph__tag">Фото</span><span class="ti-ph__txt">Главное фото: термочехол на разборном пластинчатом теплообменнике в тепловом пункте (реальный объект, слайд 1 презентации)</span></div></figure>
   </div>
@@ -141,7 +132,7 @@
 <section class="ti-section"><h2>Термочехол, теплоизоляционный кожух или заводская изоляция: что выбрать</h2>
 <p>Теплоизоляционный кожух для теплообменника бывает трёх видов: металлический короб, заводской кожух производителя и мягкий термочехол. Термочехол отличается от двух других тем, что его шьют по фактическим размерам аппарата, а не по коду модели из каталога. Отсюда главное правило: заводской кожух подходит, только если аппарат не перебирали и его комплектация совпадает с паспортом.</p>
 <div class="ti-table"><table><thead><tr><th>Ваша ситуация</th><th>Что выбрать</th><th>Почему</th></tr></thead><tbody><tr><td data-label="Ваша ситуация">Новый аппарат Ридан, код и рама известны, пакет не меняли</td><td data-label="Что выбрать">заводской кожух производителя</td><td data-label="Почему">готовое изделие под код аппарата и давление 10, 16 или 25 бар</td></tr><tr><td data-label="Ваша ситуация">Аппарат перебирали: меняли число пластин или раму</td><td data-label="Что выбрать">термочехол по замеру</td><td data-label="Почему">каталожный кожух подбирают по паспорту, а не по факту</td></tr><tr><td data-label="Ваша ситуация">Аппарат другой марки или снятой с производства модели</td><td data-label="Что выбрать">термочехол по модели и фото</td><td data-label="Почему">заводского кожуха может не быть</td></tr><tr><td data-label="Ваша ситуация">Тесный тепловой пункт, до стены несколько сантиметров</td><td data-label="Что выбрать">термочехол с аэрогелем</td><td data-label="Почему">тонкий слой при той же задаче</td></tr><tr><td data-label="Ваша ситуация">Проходная зона цеха, возможны удары</td><td data-label="Что выбрать">металлический короб (оцинковка, нержавейка, алюминий 0,5–0,8 мм)</td><td data-label="Почему">лист держит механическую нагрузку</td></tr><tr><td data-label="Ваша ситуация">Утепление теплообменника сделано фольгированной лентой или самодельной «шубой»</td><td data-label="Что выбрать">термочехол</td><td data-label="Почему">ленту при каждой промывке срезают и клеят заново, чехол снимают модулями</td></tr><tr><td data-label="Ваша ситуация">Аппарат промывают и переобжимают каждый сезон</td><td data-label="Что выбрать">термочехол</td><td data-label="Почему">модули снимаются по отдельности, короб разбирается целиком</td></tr></tbody></table></div>
-<p>Заводские теплоизоляционные кожухи подбираются по коду аппарата и раме. В каталогах производителей цены начинаются примерно от 17 тыс. ₽ и доходят до 130 тыс. ₽ и выше для крупных рам (ноябрь 2026). Металлический короб жёстче и служит дольше — производители указывают до 15 лет <span class="ti-check">(уточнить)</span>, — но он тяжелее и сложнее при демонтаже. Термочехол легче и снимается по частям, а от сильного удара защищает слабее листа.</p>
+<p>Заводские теплоизоляционные кожухи подбираются по коду аппарата и раме. Металлический короб жёстче и служит до 15 лет <span class="ti-check">(уточнить)</span>, но он тяжелее и сложнее при демонтаже. Термочехол легче и снимается по частям, а от сильного удара защищает слабее листа.</p>
 <p>Если по таблице подходит термочехол, дальше — из чего он состоит.</p>
 </section>
 <section class="ti-section"><h2>Термочехол для теплообменника: из чего он состоит</h2>
@@ -240,8 +231,7 @@
   <div class="ti-help__main">
     <p class="ti-help__title">Рассчитаем термочехол по фото</p>
     <p class="ti-help__text">Пришлите модель аппарата, число пластин, температуру теплоносителя и фото со всех сторон — инженер подберёт исполнение и подготовит КП.</p>
-    <!-- TODO: подключить обработчик формы сайта -->
-    <form class="ti-form" onsubmit="return false">
+        <form class="ti-form" onsubmit="return false">
       <input type="text" name="model" aria-label="Модель теплообменника" placeholder="Модель теплообменника">
       <input type="text" name="plates" inputmode="numeric" aria-label="Число пластин" placeholder="Число пластин">
       <input type="text" name="temp" inputmode="numeric" aria-label="Температура теплоносителя на входе, °C" placeholder="Температура на входе, °C">
@@ -287,7 +277,6 @@
 </section>
 
 </main>
-<!-- Микроразметка: после снятия пометок (уточнить) сверить ответы FAQ с текстом -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Теплоизоляция для теплообменников", "serviceType": "Изготовление съёмных термочехлов для пластинчатых теплообменников", "provider": {"@type": "Organization", "name": "ИНТЭР", "url": "https://inter-heat.ru/", "telephone": "+7 (383) 381-63-69"}, "areaServed": "RU"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://inter-heat.ru/"}, {"@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://inter-heat.ru/services/"}, {"@type": "ListItem", "position": 3, "name": "Теплоизоляция для теплообменников", "item": "https://inter-heat.ru/services/teploizolyatsiya-teploobmennikov/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Можно ли заказать чехол на уже работающий теплообменник?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Чехол шьют по модели, фактическому числу пластин и фото установленного аппарата. Если данных не хватает, специалист выезжает на замер."}}, {"@type": "Question", "name": "Что будет с чехлом, если потом добавить пластины?", "acceptedAnswer": {"@type": "Answer", "text": "Пакет станет длиннее, и боковые модули перестанут сходиться. Пришлите новое число пластин — перешьём боковые модули, остальные останутся прежними."}}, {"@type": "Question", "name": "Не промокнет ли текстильный чехол?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Наружная стеклоткань с силиконовым покрытием не пропускает воду, а утеплитель закреплён внутри модуля и не сползает."}}, {"@type": "Question", "name": "Можно ли поставить термочехол на улице?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Место установки указывают в опросном листе. Для улицы берут стеклоткань с силиконовым покрытием, устойчивую к ультрафиолету и осадкам."}}, {"@type": "Question", "name": "Делаете ли чехлы для кожухотрубных теплообменников, подогревателей и бойлеров ГВС?", "acceptedAnswer": {"@type": "Answer", "text": "Да, по эскизу или фото с размерами корпуса, патрубков и опор."}}, {"@type": "Question", "name": "Как ухаживать за чехлом?", "acceptedAnswer": {"@type": "Answer", "text": "Сухой или влажной уборкой поверхности. Чехол не должен постоянно контактировать с кислотами и щелочами."}}, {"@type": "Question", "name": "Какая гарантия?", "acceptedAnswer": {"@type": "Answer", "text": "Гарантийный срок не менее 2 лет, срок службы чехла не менее 5 лет."}}]}</script>
